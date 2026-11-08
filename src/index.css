@@ -30,3 +30,29 @@ body {
   -webkit-text-fill-color: transparent;
   animation: blue-shift 3s ease-in-out infinite;
 }
+
+
+@keyframes blue-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-blue {
+  background: linear-gradient(
+    90deg,
+    #60a5fa,   
+    #3b82f6,   
+    #1d4ed8,   
+    #3b82f6,
+    #60a5fa
+  );
+  background-size: 100% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: blue-shift 3s ease-out infinite;
+}
